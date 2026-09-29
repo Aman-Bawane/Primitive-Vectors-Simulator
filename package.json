@@ -23,9 +23,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "agent": "node server/agent.js",
     "build": "vite build",
     "preview": "vite preview",
-    "agent" : "node server/agent.js"
+    "agent": "node server/agent.js"
   }
 }
