@@ -278,7 +278,7 @@ function App() {
 
           {/* VECTOR CONTROLS */}
 
-          <VectorControls
+          <AgentPanel\n            mode={mode}\n            latticeType={latticeType}\n            vectors={vectors}\n            onApply={applyAgentResult}\n          />\n\n          <VectorControls
             vectors={vectors}
             updateVector={updateVector}
             mode={mode}
