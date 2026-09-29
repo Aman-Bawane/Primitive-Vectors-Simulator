@@ -153,6 +153,6 @@ set clarification to a short question.
 app.listen(8787, () => {
   console.log("=================================");
   console.log("Primitive Vector Lab AI Agent");
-  console.log("Running at http://localhost:5173");
+  console.log("Running at http://localhost:8787");
   console.log("=================================");
 });

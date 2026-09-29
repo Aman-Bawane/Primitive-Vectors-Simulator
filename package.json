@@ -25,6 +25,7 @@
     "dev": "vite",
     "agent": "node server/agent.js",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "agent" : "node server/agent.js"
   }
 }
