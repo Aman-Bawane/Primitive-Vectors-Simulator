@@ -4,6 +4,7 @@ import LatticeView from "./components/LatticeView";
 import ControlPanel from "./components/ControlPanel";
 import VectorControls from "./components/VectorControls";
 import MetricsPanel from "./components/MetricsPanel";
+import AgentPanel from "./components/AgentPanel";
 import { latticeTypes } from "./components/LatticeTypes";
 import "./styles.css";
 
