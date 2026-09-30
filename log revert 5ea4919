@@ -1,0 +1,15 @@
+[33m5ea4919[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Connect AI agent box to frontend
+[33mb9e8cd7[m Fix duplicate agent script
+[33m1640923[m Fixed amd Started Agent
+[33m3617805[m Configure Node module type and agent script
+[33m06dcc6c[m Complete frontend agent state integration
+[33mf97143d[m Style frontend lattice AI agent
+[33m7a5b683[m Proxy frontend agent API to server
+[33m97a847d[m Add frontend lattice AI agent panel
+[33m0c88349[m Connect frontend agent panel to simulator state
+[33mf907808[m Fix Vite production build command
+[33mabb9a11[m Fix React Three Fiber dependencies
+[33m5d1e4da[m Fix React Three Fiber dependency versions
+[33mc8d9c0e[m Remove project structure section from README
+[33mf9d2c2d[m Revise README with detailed project features
+[33m6fcadae[m Initial commit
