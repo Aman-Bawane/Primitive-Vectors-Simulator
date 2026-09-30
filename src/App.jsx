@@ -152,33 +152,6 @@ function App() {
     setGenerated(true);
   };
 
-  const applyAgentResult = (result) => {
-    if (result?.clarification) return;
-
-    const nextMode = result?.mode || mode;
-    const nextLatticeType = result?.latticeType || latticeType;
-
-    setMode(nextMode);
-    setLatticeType(nextLatticeType);
-
-    if (result?.vectors) {
-      setVectors((prev) => ({
-        a: Array.isArray(result.vectors.a) ? result.vectors.a.map(Number) : [...prev.a],
-        b: Array.isArray(result.vectors.b) ? result.vectors.b.map(Number) : [...prev.b],
-        c: Array.isArray(result.vectors.c) ? result.vectors.c.map(Number) : [...prev.c],
-      }));
-    } else if (result?.latticeType && latticeTypes[result.latticeType]) {
-      const selected = latticeTypes[result.latticeType];
-      setVectors({
-        a: [...selected.a],
-        b: [...selected.b],
-        c: [...selected.c],
-      });
-    }
-
-    setGenerated(result?.generate !== false);
-  };
-
   // ==========================================
   // SCALAR POINT
   // ==========================================
@@ -305,14 +278,7 @@ function App() {
 
           {/* VECTOR CONTROLS */}
 
-          <AgentPanel
-            mode={mode}
-            latticeType={latticeType}
-            vectors={vectors}
-            onApply={applyAgentResult}
-          />
-
-          <VectorControls
+          <AgentPanel\n            mode={mode}\n            latticeType={latticeType}\n            vectors={vectors}\n            onApply={applyAgentResult}\n          />\n\n          <VectorControls
             vectors={vectors}
             updateVector={updateVector}
             mode={mode}
