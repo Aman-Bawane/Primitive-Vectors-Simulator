@@ -2,7 +2,6 @@
   "name": "premitive_vectors_simulation",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
     "@react-three/drei": "^10.7.9",
@@ -23,7 +22,6 @@
   },
   "scripts": {
     "dev": "vite",
-    "agent": "node server/agent.js",
     "build": "vite build",
     "preview": "vite preview"
   }
